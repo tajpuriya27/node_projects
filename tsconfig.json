@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
-    "sourceMap": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
