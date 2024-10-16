@@ -2,10 +2,9 @@
   "name": "futsal-connect",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "cross-env NODE_ENV=production node dist/index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.ts",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "build": "tsc",
     "start:test": "cross-env NODE_ENV=test node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +19,7 @@
     "express": "^4.21.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.7.5",
     "nodemon": "^3.1.7",

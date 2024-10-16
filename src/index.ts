@@ -1,13 +1,7 @@
-import express from "express";
+import app from "./app";
+import config from "./utils/config";
+import logger from "./utils/logger";
 
-// const app = express();
-
-// app.use(express.json());
-
-// app.get("/", (_req, res) => {
-//   res.send("Hello World");
-// });
-
-// app.listen(4000, () => {
-//   console.log(`Server running on port 4000`);
-// });
+app.listen(config.PORT, () => {
+  logger.info(`Server running on port ${config.PORT}`);
+});
